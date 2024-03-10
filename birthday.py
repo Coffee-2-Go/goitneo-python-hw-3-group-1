@@ -47,12 +47,12 @@ def get_birthdays_per_week(book, *_):
     if birthdays_this_week:
         result += "This week:\n"
         for day, names in birthdays_this_week.items():
-            result += f"{calendar.day_name[day]}: {", ".join(names)}\n"
+            result += f"{calendar.day_name[day]}: {', '.join(names)}\n"
 
     if birthdays_next_week:
         result += "Next week:\n"
         for day, names in birthdays_next_week.items():
-            result += f"{calendar.day_name[day]}: {", ".join(names)}\n"
+            result += f"{calendar.day_name[day]}: {', '.join(names)}\n"
 
 
     return result.strip("\n")
